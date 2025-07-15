@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health App</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                
+                <div class="sidebar-image-overlay"></div>
+               <div class="history-section">
+  <h3 style="font-size: 1.8rem; color: #412d2d; font-weight: bold; margin-bottom: 16px;">
+     History
+  </h3>
+  <ul id="chat-history">
+    <!-- History messages appear here -->
+  </ul>
+</div>
+
+        </aside>
+
+        <main class="main-content">
+            <header class="navbar">
+              
+                <div class="logo">Medibot</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="auth-buttons">
+                    <header class="navbar">
+    <div class="auth-buttons">
+        <a href="signup.html" class="login-button">Sign Up</a>
+        
+        <button id="logoutButton" class="login-button" style="display: none;">Logout</button>
+    </div>
+</header>
+
+                    <div class="g_id_signin"
+                         data-type="standard"
+                         data-size="medium"
+                         data-theme="outline"
+                         data-text="signin_with"
+                         data-shape="rectangular"
+                         data-logo_alignment="left">
+                    </div>
+
+                    <button id="logoutBtn" class="login-button" style="display: none;" onclick="logout()">Logout</button>
+                </div>
+            </header>
+
+            <section class="hero-section">
+                <div class="hero-image-overlay"></div>
+                <div class="hero-text-container">
+                    <h1>Welcome to Medibot, tell me your symptoms?</h1>
+                    <div class="search-bar-container">
+                        <div id="chatbox" class="chatbox"></div>
+                        <div class="input-send-container">
+                            <input type="text" id="userInput" class="search-input" placeholder="Type your symptoms or reminders...">
+                            <button id="sendButton" class="send-button" onclick="processInput()">&#10148;</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
